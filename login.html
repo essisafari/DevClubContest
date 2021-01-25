@@ -1,34 +1,307 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <link rel="stylesheet" href="login.css">
 
-<<<<<<< HEAD
-    <!-- hello this is the submission from Shaolun  -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-=======
-    <!-- Optional JavaScript; choose one of the two! -->
->>>>>>> 8cdb6df9113526385f763f515fad4958f7b4da2c
+  <div id="container" style="width: 300px;">
+    <html lang="en">
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <head>
+      <style class="darkreader darkreader--fallback" media="screen"></style>
+      <style class="darkreader darkreader--text" media="screen"></style>
+      <style class="darkreader darkreader--invert" media="screen">
+        .jfk-bubble.gtx-bubble,
+        .captcheck_answer_label>input+img,
+        span#closed_text>img[src^="https://www.gstatic.com/images/branding/googlelogo"],
+        embed[type="application/pdf"] {
+          filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+        }
+      </style>
+      <style class="darkreader darkreader--inline" media="screen">
+        [data-darkreader-inline-bgcolor] {
+          background-color: var(--darkreader-inline-bgcolor) !important;
+        }
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
-    <!--Hi! This is Sofia-->
-  </body>
+        [data-darkreader-inline-bgimage] {
+          background-image: var(--darkreader-inline-bgimage) !important;
+        }
+
+        [data-darkreader-inline-border] {
+          border-color: var(--darkreader-inline-border) !important;
+        }
+
+        [data-darkreader-inline-border-bottom] {
+          border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+        }
+
+        [data-darkreader-inline-border-left] {
+          border-left-color: var(--darkreader-inline-border-left) !important;
+        }
+
+        [data-darkreader-inline-border-right] {
+          border-right-color: var(--darkreader-inline-border-right) !important;
+        }
+
+        [data-darkreader-inline-border-top] {
+          border-top-color: var(--darkreader-inline-border-top) !important;
+        }
+
+        [data-darkreader-inline-boxshadow] {
+          box-shadow: var(--darkreader-inline-boxshadow) !important;
+        }
+
+        [data-darkreader-inline-color] {
+          color: var(--darkreader-inline-color) !important;
+        }
+
+        [data-darkreader-inline-fill] {
+          fill: var(--darkreader-inline-fill) !important;
+        }
+
+        [data-darkreader-inline-stroke] {
+          stroke: var(--darkreader-inline-stroke) !important;
+        }
+
+        [data-darkreader-inline-outline] {
+          outline-color: var(--darkreader-inline-outline) !important;
+        }
+
+        [data-darkreader-inline-stopcolor] {
+          stop-color: var(--darkreader-inline-stopcolor) !important;
+        }
+      </style>
+      <style class="darkreader darkreader--variables" media="screen">
+        :root {
+          --darkreader-neutral-background: #131516;
+          --darkreader-neutral-text: #d8d4cf;
+          --darkreader-selection-background: #004daa;
+          --darkreader-selection-text: #e8e6e3;
+        }
+      </style>
+      <script class="darkreader darkreader--proxy">(function injectProxy() {
+          document.dispatchEvent(new CustomEvent('__darkreader__inlineScriptsAllowed'));
+          const addRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'addRule');
+          const insertRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'insertRule');
+          const deleteRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'deleteRule');
+          const removeRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'removeRule');
+          const cleanUp = () => {
+            Object.defineProperty(CSSStyleSheet.prototype, 'addRule', addRuleDescriptor);
+            Object.defineProperty(CSSStyleSheet.prototype, 'insertRule', insertRuleDescriptor);
+            Object.defineProperty(CSSStyleSheet.prototype, 'deleteRule', deleteRuleDescriptor);
+            Object.defineProperty(CSSStyleSheet.prototype, 'removeRule', removeRuleDescriptor);
+            document.removeEventListener('__darkreader__cleanUp', cleanUp);
+            document.removeEventListener('__darkreader__addUndefinedResolver', addUndefinedResolver);
+          };
+          const addUndefinedResolver = (e) => {
+            customElements.whenDefined(e.detail.tag).then(() => {
+              document.dispatchEvent(new CustomEvent('__darkreader__isDefined', { detail: { tag: e.detail.tag } }));
+            });
+          };
+          document.addEventListener('__darkreader__cleanUp', cleanUp);
+          document.addEventListener('__darkreader__addUndefinedResolver', addUndefinedResolver);
+          const updateSheetEvent = new Event('__darkreader__updateSheet');
+          function proxyAddRule(selector, style, index) {
+            addRuleDescriptor.value.call(this, selector, style, index);
+            if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+              this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+            return -1;
+          }
+          function proxyInsertRule(rule, index) {
+            const returnValue = insertRuleDescriptor.value.call(this, rule, index);
+            if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+              this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+            return returnValue;
+          }
+          function proxyDeleteRule(index) {
+            deleteRuleDescriptor.value.call(this, index);
+            if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+              this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+          }
+          function proxyRemoveRule(index) {
+            removeRuleDescriptor.value.call(this, index);
+            if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+              this.ownerNode.dispatchEvent(updateSheetEvent);
+            }
+          }
+          Object.defineProperty(CSSStyleSheet.prototype, 'addRule', Object.assign({}, addRuleDescriptor, { value: proxyAddRule }));
+          Object.defineProperty(CSSStyleSheet.prototype, 'insertRule', Object.assign({}, insertRuleDescriptor, { value: proxyInsertRule }));
+          Object.defineProperty(CSSStyleSheet.prototype, 'deleteRule', Object.assign({}, deleteRuleDescriptor, { value: proxyDeleteRule }));
+          Object.defineProperty(CSSStyleSheet.prototype, 'removeRule', Object.assign({}, removeRuleDescriptor, { value: proxyRemoveRule }));
+        })()</script>
+      <style class="darkreader darkreader--user-agent" media="screen">
+        html {
+          background-color: #181a1b !important;
+        }
+
+        html,
+        body,
+        input,
+        textarea,
+        select,
+        button {
+          background-color: #181a1b;
+        }
+
+        html,
+        body,
+        input,
+        textarea,
+        select,
+        button {
+          border-color: #736b5e;
+          color: #e8e6e3;
+        }
+
+        a {
+          color: #3391ff;
+        }
+
+        table {
+          border-color: #545b5e;
+        }
+
+        ::placeholder {
+          color: #b2aba1;
+        }
+
+        input:-webkit-autofill,
+        textarea:-webkit-autofill,
+        select:-webkit-autofill {
+          background-color: #555b00 !important;
+          color: #e8e6e3 !important;
+        }
+
+        ::-webkit-scrollbar {
+          background-color: #202324;
+          color: #aba499;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: #454a4d;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+          background-color: #575e62;
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+          background-color: #484e51;
+        }
+
+        ::-webkit-scrollbar-corner {
+          background-color: #181a1b;
+        }
+
+        * {
+          scrollbar-color: #454a4d #202324;
+        }
+
+        ::selection {
+          background-color: #004daa !important;
+          color: #e8e6e3 !important;
+        }
+
+        ::-moz-selection {
+          background-color: #004daa !important;
+          color: #e8e6e3 !important;
+        }
+      </style>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.79.0">
+      <title>DS Developer Club sign in</title>
+
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+
+
+      <!-- Bootstrap core CSS -->
+      <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <style class="darkreader darkreader--sync" media="screen"></style>
+
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+      <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+      <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+      <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+      <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3"
+        style="--darkreader-inline-color:#8662ba;" data-darkreader-inline-color="">
+      <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+      <meta name="theme-color" content="#5d3d8b">
+
+
+      <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+
+
+      <!-- Custom styles for this template -->
+      <link href="signin.css" rel="stylesheet">
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <meta name="darkreader" content="c4c2221ad1461b01b5b0596089541d5f">
+      <style class="darkreader darkreader--override" media="screen">
+        .vimvixen-hint {
+          background-color: #7b5300 !important;
+          border-color: #d8b013 !important;
+          color: #f3e8c8 !important;
+        }
+
+        ::placeholder {
+          opacity: 0.5 !important;
+        }
+      </style>
+    </head>
+
+<body class="text-center">
+
+  <main class="form-signin">
+    <form>
+      <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <label for="inputEmail" class="visually-hidden">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+      <label for="inputPassword" class="visually-hidden">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">©2021</p>
+    </form>
+  </main>
+
+  </div>
+
+</body>
+
 </html>
