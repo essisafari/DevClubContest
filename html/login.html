@@ -4,10 +4,9 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="login.css" type="text/css">
-
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="../css/particlejsStyle.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"> </script>
 
   <!-- Bootstrap CSS -->
@@ -271,20 +270,26 @@
           opacity: 0.5 !important;
         }
       </style>
-    </head>
 
-<body class="text-center">
+    <link rel="stylesheet" href="../css/login.css" type="text/css">
 
-  <nav><ul>
-    <li>Login</li>
-    <li>test2</li>
-  </ul></nav>
+</head>
 
-  <div id="container" style="width: 300px; margin-left: auto; margin-right: auto;">
+<body id="particles-js"  class="text-center">
+
+
+<div >
+
+
+  <div id="container" class="">
+      <nav><ul>
+          <li>Login</li>
+          <li>test2</li>
+      </ul></nav>
 
   <main class="form-signin">
-    <form>
-      <img class="mb-4" src="https://s3.ap-south-1.amazonaws.com/leverageedu/school-logo/canada/2019-10-23_51_DouglasCollege-NewWestminsterlogo.jpg" alt="" width="60" height="57">
+    <form id="loginForm">
+      <img class="mb-4" src="https://s3.ap-south-1.amazonaws.com/leverageedu/school-logo/canada/2019-10-23_51_DouglasCollege-NewWestminsterlogo.jpg" alt="DSC logo">
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
       <label for="inputEmail" class="visually-hidden">Email address</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
@@ -295,14 +300,43 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+      <button class="w-100 btn btn-lg  DSCsignin" type="submit">Sign in</button>
+      <button class="w-100 btn btn-lg  DSCsignin" type="submit">Register</button>
       <p class="mt-5 mb-3 text-muted">©2021</p>
     </form>
   </main>
 
   </div>
 
+</div>
+
+
+
+  <!-- particle JS scripts -->
+  <script src="../js/particlesLib/particles.js"></script>
+  <script src="../js/particlesLib/particlesJS-config.js"></script>
+
+  <!-- particle JS stats.js -->
+  <script src="../js/particlesLib/stats.js"></script>
+  <script>
+      var count_particles, stats, update;
+      stats = new Stats;
+      stats.setMode(0);
+      stats.domElement.style.position = 'absolute';
+      stats.domElement.style.left = '0px';
+      stats.domElement.style.top = '0px';
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector('.js-count-particles');
+      update = function() {
+          stats.begin();
+          stats.end();
+          if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+              count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+          }
+          requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+  </script>
 </body>
 
 </html>

@@ -35,9 +35,6 @@ button.w-100 {
 }
 
 
-.DSCsignin:first-child {
-    background-color: #111111;
-}
 
 #loginForm {
     width: 90%;
@@ -50,4 +47,8 @@ button.w-100 {
 #loginForm img {
     width: 25%;
     height: 100%;
+}
+
+.DSCsignin {
+    color: #66ff54;
 }
