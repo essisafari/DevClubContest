@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: auto;
+    background-color: #7dce7399;
+    border-radius: 2vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding: 4vw 2vw;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+li:hover {
+    background-color: cyan;
+}
+
+li.selected {
+    background-color: cyan;
+}
+
+button.w-100 {
+    border: 1px solid white;
+}
+
+
+.DSCsignin:first-child {
+    background-color: #111111;
+}
+
+#loginForm {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.86);
+    padding: 1vw;
+    border-radius: 2vw;
+}
+
+#loginForm img {
+    width: 25%;
+    height: 100%;
+}
